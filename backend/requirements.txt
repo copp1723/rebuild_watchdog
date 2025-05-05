@@ -1,0 +1,31 @@
+# Core FastAPI & ASGI Server
+fastapi==0.104.1
+uvicorn==0.24.0          # Development server
+gunicorn==21.2.0         # Production WSGI server (if needed)
+python-multipart==0.0.6  # For file uploads (like CSVs)
+
+# Data Validation & Settings
+pydantic>=2.0.0,<3.0.0
+pydantic-settings>=2.0.0,<3.0.0
+
+# Data Processing
+pandas==2.1.1            # Core data manipulation for CSVs/reports
+numpy==1.26.1            # Dependency for pandas
+
+# Database (Supabase/PostgreSQL)
+SQLAlchemy~=2.0.29       # ORM - Using ~ for minor/patch updates within 2.0
+asyncpg~=0.29.0          # Async PostgreSQL Driver (Recommended for FastAPI with Supabase)
+alembic~=1.13.1          # Database Migrations (if using SQLAlchemy migrations)
+
+# OpenAI Integration
+openai>=1.0.0,<2.0.0
+
+# HTTP Client & Utilities
+httpx==0.25.1            # Async-capable HTTP client
+python-dotenv==1.0.0     # Load .env files
+
+# Testing
+pytest==7.4.3            # Testing framework
+
+# Other (Included as requested)
+jinja2==3.1.2            # Templating engine (keep if needed for any HTML snippets or specific formatting)
